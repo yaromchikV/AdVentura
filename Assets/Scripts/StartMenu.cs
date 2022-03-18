@@ -7,6 +7,13 @@ public class StartMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int sceneIndex = PlayerPrefs.GetInt("Level", 1); 
+        
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

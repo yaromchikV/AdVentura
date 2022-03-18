@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 7074810212961939112}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c547a2205b0e7341a6a94c6705b025e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64

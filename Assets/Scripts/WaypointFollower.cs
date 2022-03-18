@@ -9,7 +9,7 @@ public class WaypointFollower : MonoBehaviour
 
     [SerializeField] private float speed = 2f;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Vector2.Distance(waypoints[currentWaypointIndex].transform.position, transform.position) < .1f)
         {

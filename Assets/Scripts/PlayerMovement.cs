@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         dirX = joystick.Horizontal;
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         var isGrounded = Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
         if (isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce); //AddForce 
             jumpSoundEffect.Play();
         }
     }
