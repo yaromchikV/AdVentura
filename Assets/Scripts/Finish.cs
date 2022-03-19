@@ -13,12 +13,12 @@ public class Finish : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
     [SerializeField] Sprite spriteFinish;
     
     private void Start()
     {   
         finishSound = GetComponent<AudioSource>();
-
         spriteRenderer = GetComponent<SpriteRenderer>(); 
         animator = GetComponent<Animator>();
     }
@@ -62,15 +62,8 @@ public class Finish : MonoBehaviour
     private void SavePrefs()
     {
         int index = SceneManager.GetActiveScene().buildIndex + 1;
-        if (index == SceneManager.sceneCountInBuildSettings - 1)
-        {
-            PlayerPrefs.SetInt("Level", 1);
-            PlayerPrefs.Save();
-        } 
-        else 
-        {  
-            PlayerPrefs.SetInt("Level", index);
-            PlayerPrefs.Save();
-        }
+        
+        PlayerPrefs.SetInt("Level", index);
+        PlayerPrefs.Save();
     }
 }
