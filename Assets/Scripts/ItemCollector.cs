@@ -11,6 +11,13 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] private AudioSource collectionSoundEffect;
 
+    private int cherriesMax = 0;
+
+    private void Start() {
+        var fruits = GameObject.FindGameObjectsWithTag("Cherry");
+        cherriesMax = fruits.Length;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Cherry"))
@@ -18,7 +25,7 @@ public class ItemCollector : MonoBehaviour
             collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             cherries++;
-            cherriesText.text = "Cherries: " + cherries;
+            cherriesText.text = "Cherries: " + cherries + "/" + cherriesMax;
         }
     }
 }
