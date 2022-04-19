@@ -15,7 +15,6 @@ public class EnemyLife : MonoBehaviour
             var playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
             playerRb.velocity = new Vector2(playerRb.velocity.x, jumpForce);
 
-
             var anim = gameObject.GetComponent<Animator>();
             anim.SetTrigger("death");
 
