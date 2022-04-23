@@ -48,8 +48,7 @@ public class Finish : MonoBehaviour
         {
             finishSound.Play();
             levelCompleted = true;
-
-            SavePrefs();
+            
             Invoke("CompleteLevel", 1f);
         }
     }
@@ -57,13 +56,5 @@ public class Finish : MonoBehaviour
     private void CompleteLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    private void SavePrefs()
-    {
-        int index = SceneManager.GetActiveScene().buildIndex + 1;
-        
-        PlayerPrefs.SetInt("Level", index);
-        PlayerPrefs.Save();
     }
 }
