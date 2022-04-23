@@ -39,7 +39,6 @@ public class EndGame : MonoBehaviour
             finishSound.Play();
             levelCompleted = true;
 
-            SaveEndGamePrefs();
             Invoke("CompleteGame", 2f);
         }
     }
@@ -47,11 +46,5 @@ public class EndGame : MonoBehaviour
     private void CompleteGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    private void SaveEndGamePrefs()
-    {
-        PlayerPrefs.SetInt("Level", 1);
-        PlayerPrefs.Save();
     }
 }
