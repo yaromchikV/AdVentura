@@ -192,7 +192,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 1.5
+  speed: 2
   isEnemy: 1
 --- !u!82 &6255893301813654196
 AudioSource:
