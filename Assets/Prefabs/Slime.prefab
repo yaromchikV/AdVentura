@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 1
-  enemy: {fileID: 2833182148643668906}
+  isEnemy: 1
 --- !u!114 &2833182148643668899
 MonoBehaviour:
   m_ObjectHideFlags: 0

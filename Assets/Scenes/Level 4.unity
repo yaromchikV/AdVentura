@@ -36490,6 +36490,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7074810212961939117, guid: 0cc793c5610de314e9a3e2ade3e8d937, type: 3}
+      propertyPath: fruitsName
+      value: Pineapples
+      objectReference: {fileID: 0}
+    - target: {fileID: 7074810212961939117, guid: 0cc793c5610de314e9a3e2ade3e8d937, type: 3}
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 1584526567}
@@ -37231,6 +37235,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1360011788}
     - target: {fileID: 756145364515976751, guid: b8d62ad1ccf5b8c42b8ff16c64e50a22, type: 3}
+      propertyPath: isEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 756145364515976751, guid: b8d62ad1ccf5b8c42b8ff16c64e50a22, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1508478780}
@@ -37238,6 +37246,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1019074097}
+    - target: {fileID: 756145364515976754, guid: b8d62ad1ccf5b8c42b8ff16c64e50a22, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 756145364515976754, guid: b8d62ad1ccf5b8c42b8ff16c64e50a22, type: 3}
       propertyPath: m_SortingLayer
       value: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2003483031877508077}
   - component: {fileID: 1494836487883666774}
   - component: {fileID: -252893875724860888}
+  - component: {fileID: 5366169417722623427}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Trap
@@ -272,3 +273,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5366169417722623427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4143509280107371931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecba099c67922945ab9e74018240228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  speed: 3
+  isEnemy: 1

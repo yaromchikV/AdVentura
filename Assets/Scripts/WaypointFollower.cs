@@ -9,15 +9,15 @@ public class WaypointFollower : MonoBehaviour
 
     [SerializeField] private float speed = 2f;
 
-    [SerializeField] private GameObject enemy;
+    [SerializeField] private bool isEnemy = false;
 
     private SpriteRenderer sprite;
 
     private void Start() 
     {
-        if (enemy != null) 
+        if (isEnemy)
         {
-            sprite = enemy.GetComponent<SpriteRenderer>(); 
+            sprite = GetComponent<SpriteRenderer>(); 
         }
     }
 
@@ -31,7 +31,7 @@ public class WaypointFollower : MonoBehaviour
                 currentWaypointIndex = 0;
             }
 
-            if (enemy != null)
+            if (isEnemy)
             {
                 sprite.flipX = !sprite.flipX;
             }

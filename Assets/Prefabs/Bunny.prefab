@@ -193,7 +193,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 4
-  enemy: {fileID: 0}
+  isEnemy: 0
 --- !u!82 &2421672795696080469
 AudioSource:
   m_ObjectHideFlags: 0

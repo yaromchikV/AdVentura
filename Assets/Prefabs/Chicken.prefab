@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   speed: 4
-  enemy: {fileID: 2286420168381245561}
+  isEnemy: 1
 --- !u!114 &2286420168381245558
 MonoBehaviour:
   m_ObjectHideFlags: 0
