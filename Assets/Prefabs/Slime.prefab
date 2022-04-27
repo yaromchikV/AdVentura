@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 1
-  enemy: {fileID: 2833182148643668906}
+  isEnemy: 1
 --- !u!114 &2833182148643668899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,8 +184,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 4b4dd7245f6104c8c8eb07ccf6b386ed, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

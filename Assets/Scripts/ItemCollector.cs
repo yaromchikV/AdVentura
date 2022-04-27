@@ -11,6 +11,8 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] private AudioSource collectionSoundEffect;
 
+    [SerializeField] private string fruitsName;
+
     private int cherriesMax = 0;
 
     private void Start() {
@@ -25,7 +27,7 @@ public class ItemCollector : MonoBehaviour
             collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             cherries++;
-            cherriesText.text = "Cherries: " + cherries + "/" + cherriesMax;
+            cherriesText.text = fruitsName + ": " + cherries + "/" + cherriesMax;
         }
     }
 }
